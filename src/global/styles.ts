@@ -11,8 +11,9 @@ export const GobalStyle = createGlobalStyle`
     html {
         scroll-behavior: smooth;
         font-family: "Bebas Neue", sans-serif;
-        font-weight: 400;
+        font-weight: 200;
         font-style: normal;
+        font-size: 62.5%;
     }
 
     body {

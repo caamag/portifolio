@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Colors } from "../../global/colors";
 
 export const Header = styled.header`
+  position: fixed;
   width: 100vw;
   max-width: 1600px;
   margin: 0 auto;
@@ -10,6 +11,7 @@ export const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 5;
 
   img {
     width: 60px;
@@ -17,9 +19,11 @@ export const Header = styled.header`
     height: auto;
     margin-left: 30px;
     transform: scale(0.9);
+    opacity: 0.7;
 
     &:hover {
       transform: scale(1);
+      opacity: 1;
     }
   }
 `;
