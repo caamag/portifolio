@@ -5,6 +5,7 @@ import Header from "./components/header";
 
 //pages
 import HomePage from "./pages/home";
+import ProjectsPage from "./pages/projects";
 
 const Router = () => {
   return (
@@ -12,6 +13,7 @@ const Router = () => {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
       </Routes>
     </BrowserRouter>
   );
