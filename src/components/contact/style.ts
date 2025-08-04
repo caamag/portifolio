@@ -3,6 +3,7 @@ import { Colors } from "../../global/colors";
 
 export const Contacts = styled.div`
   position: fixed;
+  z-index: 5;
   width: 40px;
   height: 150px;
 
