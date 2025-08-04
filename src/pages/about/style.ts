@@ -25,7 +25,8 @@ export const Profile = styled.div`
 
   img {
     width: 300px;
-    height: auto;
+    height: 300px;
+    object-fit: cover;
     box-shadow: 1px 1px 20px ${Colors.darkGray};
     border-radius: 100%;
   }

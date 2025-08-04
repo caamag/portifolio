@@ -1,5 +1,6 @@
 import * as _ from "./style";
 import { Button } from "../../components/UI/button";
+import Profile from "../../assets/profile.jpeg";
 
 //icons
 import { FaHtml5 } from "react-icons/fa";
@@ -20,10 +21,7 @@ const AboutPage = () => {
     <_.AboutContainer>
       <_.AboutContent>
         <_.Profile>
-          <img
-            src="https://avatars.githubusercontent.com/u/105686148?v=4"
-            alt="profile"
-          />
+          <img src={Profile} alt="profile" />
           <_.BtnContainer>
             <Button>Currículo</Button>
             <Button onClick={goToEmail}>E-mail</Button>

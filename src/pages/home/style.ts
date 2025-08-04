@@ -53,25 +53,3 @@ export const Description = styled.h3`
   margin-top: -40px;
   letter-spacing: 3px;
 `;
-
-export const Contacts = styled.div`
-  position: absolute;
-  width: 40px;
-  height: 150px;
-
-  left: 40px;
-  bottom: 50px;
-
-  svg {
-    font-size: 30px;
-    color: ${Colors.gray};
-    transform: scale(0.9);
-    margin: 10px 0px;
-    transition: 150ms;
-
-    &:hover {
-      color: ${Colors.white};
-      transform: scale(1);
-    }
-  }
-`;
