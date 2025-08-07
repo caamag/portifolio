@@ -2,13 +2,20 @@ import * as _ from "./style";
 import MainBanner from "./assets/img-1-lacoste.png";
 import MobileImage from "./assets/img-lacoste-mobile.png";
 import Lacoste from "../../assets/lacoste-logo.png";
+import { useNavigate } from "react-router-dom";
 
 //components
 import { Button } from "../../components/UI/button";
 
 const LacostPage = () => {
+  const navigate = useNavigate();
+
   const goToProject = () => {
     window.open("https://lacostebrazil.zendesk.com/hc/pt-br");
+  };
+
+  const backPage = () => {
+    navigate("/projects");
   };
 
   return (
@@ -18,7 +25,10 @@ const LacostPage = () => {
           <img src={Lacoste} alt="lacoste icon" />
           <h2>Central de ajuda Lacoste</h2>
         </div>
-        <Button onClick={goToProject}>Visualizar</Button>
+        <div>
+          <Button onClick={goToProject}>Visualizar</Button>
+          <Button onClick={backPage}>Voltar</Button>
+        </div>
       </_.ProjectHeader>
 
       <_.Description>

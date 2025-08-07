@@ -51,20 +51,23 @@ const ProjectsPage = () => {
             <SiZendesk />
           </_.IconsContainer>
         </_.Card>
-        <_.Card>
-          <_.ConciexLogo src={Conciex} alt="" />
-          <h4>Pesquisas de CSAT/NPS</h4>
-          <p>
-            Plataforma integrada com Zendesk para criar, editar, visualizar e
-            excluir templates de pesquisa de satisfação + criação de relatórios.
-          </p>
-          <_.IconsContainer>
-            <RiReactjsFill />
-            <FaCss3Alt />
-            <SiTypescript />
-            <SiZendesk />
-          </_.IconsContainer>
-        </_.Card>
+        <NavLink to={"/projects/conciex"}>
+          <_.Card>
+            <_.ConciexLogo src={Conciex} alt="" />
+            <h4>Pesquisas de CSAT/NPS</h4>
+            <p>
+              Plataforma integrada com Zendesk para criar, editar, visualizar e
+              excluir templates de pesquisa de satisfação + criação de
+              relatórios.
+            </p>
+            <_.IconsContainer>
+              <RiReactjsFill />
+              <FaCss3Alt />
+              <SiTypescript />
+              <SiZendesk />
+            </_.IconsContainer>
+          </_.Card>
+        </NavLink>
         <_.Card>
           <FaGithub />
           <h4>Relatório Github</h4>

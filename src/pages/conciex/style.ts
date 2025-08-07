@@ -18,43 +18,11 @@ export const ProjectHeader = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  div {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    img {
-      width: 80px;
-      height: auto;
-      margin-right: 20px;
-    }
-
-    h2 {
-      font-size: 2.4rem;
-      color: ${Colors.white};
-      font-weight: 200;
-    }
+  img {
+    width: auto;
+    height: 30px;
+    margin-right: 20px;
   }
-`;
-
-export const ImagesContainer = styled.div`
-  width: 70%;
-  margin: 0 auto;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-`;
-
-export const MainBanner = styled.img`
-  width: auto;
-  height: 350px;
-`;
-
-export const MobileImg = styled.img`
-  height: 420px;
-  width: auto;
 `;
 
 export const Description = styled.div`
@@ -81,4 +49,10 @@ export const Description = styled.div`
       color: ${Colors.white};
     }
   }
+`;
+
+export const Demontration = styled.img`
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 10px;
 `;
