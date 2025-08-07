@@ -3,6 +3,11 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "../../components/UI/button";
 import Conciex from "../../assets/Conciex-Logo.png";
 
+//banners
+import banner1 from "./assets/nps-img-1.png";
+import banner2 from "./assets/nps-img-2.png";
+import banner3 from "./assets/nps-img-3.png";
+
 const ConciexPage = () => {
   const navigate = useNavigate();
 
@@ -57,6 +62,26 @@ const ConciexPage = () => {
           simples e funcional.
         </p>
       </_.Description>
+      <_.BannerContainer>
+        <a
+          href="https://drive.google.com/file/d/11O9zuaSW5ZOEOwRAQ9s_cWBC9HFJaoo8/view"
+          target="blank"
+        >
+          <_.Demontration src={banner1} />
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1EoZXGo9T1o3VSGTVckqEA0Eukasu-WfZ/view"
+          target="blank"
+        >
+          <_.Demontration src={banner2} />
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1PDXJoxhKqVyHB6FVG2ZD_jX5QugIhYxz/view"
+          target="blank"
+        >
+          <_.Demontration src={banner3} />
+        </a>
+      </_.BannerContainer>
     </_.Container>
   );
 };

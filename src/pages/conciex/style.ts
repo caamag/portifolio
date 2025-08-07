@@ -51,8 +51,13 @@ export const Description = styled.div`
   }
 `;
 
+export const BannerContainer = styled.div`
+  margin: 15px 0px;
+  text-align: center;
+`;
+
 export const Demontration = styled.img`
   width: 70%;
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 `;
