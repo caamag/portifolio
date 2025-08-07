@@ -1,4 +1,6 @@
 import * as _ from "./style";
+import { NavLink } from "react-router-dom";
+
 import Lacoste from "../../assets/lacoste-logo.png";
 import Roca from "../../assets/roca-logo.png";
 import Conciex from "../../assets/Conciex-Logo.png";
@@ -19,20 +21,22 @@ const ProjectsPage = () => {
   return (
     <_.ProjectsContainer>
       <_.Content>
-        <_.Card>
-          <_.ProjectLogo src={Lacoste} alt="" />
-          <h4>Central de ajuda Lacoste</h4>
-          <p>
-            Criação de Help Center com Zendesk Guide, focado em autoatendimento
-            e abertura de chamados.
-          </p>
-          <_.IconsContainer>
-            <FaHtml5 />
-            <FaCss3Alt />
-            <IoLogoJavascript />
-            <SiZendesk />
-          </_.IconsContainer>
-        </_.Card>
+        <NavLink to={"/projects/lacoste"}>
+          <_.Card>
+            <_.ProjectLogo src={Lacoste} alt="" />
+            <h4>Central de ajuda Lacoste</h4>
+            <p>
+              Criação de Help Center com Zendesk Guide, focado em
+              autoatendimento e abertura de chamados.
+            </p>
+            <_.IconsContainer>
+              <FaHtml5 />
+              <FaCss3Alt />
+              <IoLogoJavascript />
+              <SiZendesk />
+            </_.IconsContainer>
+          </_.Card>
+        </NavLink>
         <_.Card>
           <_.ProjectLogo src={Roca} alt="" />
           <h4>Portal de gestão de chamados</h4>
