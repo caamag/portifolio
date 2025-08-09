@@ -37,20 +37,22 @@ const ProjectsPage = () => {
             </_.IconsContainer>
           </_.Card>
         </NavLink>
-        <_.Card>
-          <_.ProjectLogo src={Roca} alt="" />
-          <h4>Portal de gestão de chamados</h4>
-          <p>
-            Desenvolvimento de portal interno para gestão de chamados, com foco
-            em usabilidade e eficiência no atendimento.
-          </p>
-          <_.IconsContainer>
-            <RiReactjsFill />
-            <FaCss3Alt />
-            <SiTypescript />
-            <SiZendesk />
-          </_.IconsContainer>
-        </_.Card>
+        <NavLink to={"/projects/roca"}>
+          <_.Card>
+            <_.ProjectLogo src={Roca} alt="" />
+            <h4>Portal de gestão de chamados</h4>
+            <p>
+              Desenvolvimento de portal interno para gestão de chamados, com
+              foco em usabilidade e eficiência no atendimento.
+            </p>
+            <_.IconsContainer>
+              <RiReactjsFill />
+              <FaCss3Alt />
+              <SiTypescript />
+              <SiZendesk />
+            </_.IconsContainer>
+          </_.Card>
+        </NavLink>
         <NavLink to={"/projects/conciex"}>
           <_.Card>
             <_.ConciexLogo src={Conciex} alt="" />

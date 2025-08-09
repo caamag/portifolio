@@ -12,6 +12,7 @@ import ProjectsPage from "./pages/projects";
 import AboutPage from "./pages/about";
 import LacostPage from "./pages/lacoste";
 import ConciexPage from "./pages/conciex";
+import RocaPage from "./pages/roca";
 
 const Router = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -38,6 +39,7 @@ const Router = () => {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/projects/lacoste" element={<LacostPage />} />
         <Route path="/projects/conciex" element={<ConciexPage />} />
+        <Route path="/projects/roca" element={<RocaPage />} />
       </Routes>
     </BrowserRouter>
   );

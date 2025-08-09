@@ -23,7 +23,6 @@ const LacostPage = () => {
       <_.ProjectHeader>
         <div>
           <img src={Lacoste} alt="lacoste icon" />
-          <h2>Central de ajuda Lacoste</h2>
         </div>
         <div>
           <Button onClick={goToProject}>Visualizar</Button>

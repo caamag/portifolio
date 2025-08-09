@@ -28,6 +28,12 @@ export const ProjectHeader = styled.div`
       height: auto;
       margin-right: 20px;
     }
+
+    h2 {
+      font-size: 2.4rem;
+      color: ${Colors.white};
+      font-weight: 200;
+    }
   }
 `;
 
