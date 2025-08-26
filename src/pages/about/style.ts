@@ -14,6 +14,12 @@ export const AboutContent = styled.div`
   padding-top: 130px;
   display: flex;
   justify-content: space-between;
+  gap: 10px;
+
+  @media screen and (max-width: 1000px) {
+    justify-content: center;
+    flex-direction: column;
+  }
 `;
 
 export const Profile = styled.div`
@@ -29,6 +35,16 @@ export const Profile = styled.div`
     object-fit: cover;
     box-shadow: 1px 1px 20px ${Colors.darkGray};
     border-radius: 100%;
+
+    @media screen and (max-width: 800px) {
+      width: 180px;
+      height: 180px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+    margin-bottom: 40px;
   }
 `;
 
@@ -51,6 +67,17 @@ export const AboutText = styled.div`
     font-weight: 200;
     text-indent: 15px;
     margin-bottom: 10px;
+
+    @media screen and (max-width: 800px) {
+      font-size: 14px;
+      text-align: justify;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 `;
 
@@ -64,5 +91,10 @@ export const Skills = styled.div`
     width: 40px;
     height: auto;
     margin-right: 10px;
+
+    @media screen and (max-width: 600px) {
+      height: 50px;
+      width: auto;
+    }
   }
 `;

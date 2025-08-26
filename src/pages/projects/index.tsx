@@ -4,7 +4,6 @@ import { NavLink } from "react-router-dom";
 import Lacoste from "../../assets/lacoste-logo.png";
 import Roca from "../../assets/roca-logo.png";
 import Conciex from "../../assets/Conciex-Logo.png";
-import Bleepy from "../../assets/bleepy-icon.png";
 
 //icons
 import { FaHtml5 } from "react-icons/fa";
@@ -13,7 +12,6 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { SiZendesk } from "react-icons/si";
 import { RiReactjsFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
-import { FaGithub } from "react-icons/fa6";
 import { SiFirebase } from "react-icons/si";
 import { LuShoppingBag } from "react-icons/lu";
 
@@ -70,32 +68,6 @@ const ProjectsPage = () => {
             </_.IconsContainer>
           </_.Card>
         </NavLink>
-        <_.Card>
-          <FaGithub />
-          <h4>Relatório Github</h4>
-          <p>
-            Relatório interativo que exibe dados da conta GitHub do usuário
-            inserido, com visualização dinâmica via dashboard.
-          </p>
-          <_.IconsContainer>
-            <RiReactjsFill />
-            <FaCss3Alt />
-            <SiTypescript />
-          </_.IconsContainer>
-        </_.Card>
-        <_.Card>
-          <_.ProjectLogo src={Bleepy} />
-          <h4>Bleepy</h4>
-          <p>
-            Agente de IA Mobile integrado com DeepSeek para criar um chat de
-            conversa em tempo real.
-          </p>
-          <_.IconsContainer>
-            <RiReactjsFill />
-            <SiFirebase />
-            <SiTypescript />
-          </_.IconsContainer>
-        </_.Card>
         <_.Card>
           <LuShoppingBag />
           <h4>E-commerce</h4>

@@ -22,4 +22,8 @@ export const Contacts = styled.div`
       transform: scale(1);
     }
   }
+
+  @media screen and (max-width: 600px) {
+    left: 10px;
+  }
 `;
