@@ -18,6 +18,10 @@ export const Content = styled.div`
   width: 50%;
   margin: 0 auto;
   height: 300px;
+
+  @media screen and (max-width: 500px) {
+    width: 90%;
+  }
 `;
 
 export const Title = styled.div`
@@ -31,6 +35,10 @@ export const Title = styled.div`
     font-weight: 200;
     letter-spacing: 3px;
     font-size: 18px;
+
+    @media screen and (max-width: 500px) {
+      font-size: 14px;
+    }
   }
 `;
 
@@ -38,12 +46,21 @@ export const Line = styled.div`
   width: 80%;
   height: 5px;
   background-color: ${Colors.brown};
+
+  @media screen and (max-width: 500px) {
+    width: 50%;
+  }
 `;
 
 export const Name = styled.h1`
   font-size: 16rem;
   letter-spacing: 20px;
   color: ${Colors.white};
+
+  @media screen and (max-width: 500px) {
+    font-size: 10rem;
+    letter-spacing: 12px;
+  }
 `;
 export const Description = styled.h3`
   font-size: 22px;
@@ -52,4 +69,10 @@ export const Description = styled.h3`
   color: ${Colors.brown};
   margin-top: -40px;
   letter-spacing: 3px;
+
+  @media screen and (max-width: 500px) {
+    font-size: 16px;
+    margin-top: -10px;
+    text-align: left;
+  }
 `;
