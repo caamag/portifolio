@@ -1,5 +1,29 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Colors } from "../../global/colors";
+
+const fadeInText = keyframes`
+  0% {
+    opacity: 0;
+    margin-left: -50px;
+  }
+
+  100% {
+    opacity: 1;
+    margin-left: 0px;
+  }
+`;
+
+const fadeInLine = keyframes`
+  0% {
+    opacity: 0;
+    margin-right: -50px;
+  }
+
+  100% {
+    opacity: 1;
+    margin-right: 0px;
+  }
+`;
 
 export const HomeContainer = styled.div`
   position: relative;
@@ -35,6 +59,7 @@ export const Title = styled.div`
     font-weight: 200;
     letter-spacing: 3px;
     font-size: 18px;
+    animation: ${fadeInText} 500ms ease-in-out;
 
     @media screen and (max-width: 500px) {
       font-size: 14px;
@@ -46,6 +71,7 @@ export const Line = styled.div`
   width: 80%;
   height: 5px;
   background-color: ${Colors.brown};
+  animation: ${fadeInLine} 800ms ease-in-out;
 
   @media screen and (max-width: 500px) {
     width: 50%;
@@ -56,6 +82,7 @@ export const Name = styled.h1`
   font-size: 16rem;
   letter-spacing: 20px;
   color: ${Colors.white};
+  animation: ${fadeInText} 800ms ease-in-out;
 
   @media screen and (max-width: 500px) {
     font-size: 10rem;
@@ -69,6 +96,7 @@ export const Description = styled.h3`
   color: ${Colors.brown};
   margin-top: -40px;
   letter-spacing: 3px;
+  animation: ${fadeInLine} 800ms ease-in-out;
 
   @media screen and (max-width: 500px) {
     font-size: 16px;

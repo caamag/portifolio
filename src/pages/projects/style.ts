@@ -1,5 +1,17 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Colors } from "../../global/colors";
+
+const fadeInCard = keyframes`
+  0% {
+    opacity: 0;
+    margin-bottom: -50px;
+  }
+
+  100% {
+    opacity: 1;
+    margin-bottom: 0px;
+  }
+`;
 
 export const ProjectsContainer = styled.div`
   width: 100vw;
@@ -30,6 +42,7 @@ export const Card = styled.div`
   border-radius: 15px;
   padding: 20px 30px;
   transition: 150ms;
+  animation: ${fadeInCard} 800ms ease-in-out;
 
   &:hover {
     transform: scale(1.025);

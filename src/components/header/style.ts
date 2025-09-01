@@ -1,5 +1,17 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Colors } from "../../global/colors";
+
+const fadeInNavigation = keyframes`
+  0% {
+    opacity: 0;
+    margin-top: -50px;
+  }
+
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+`;
 
 export const Header = styled.header`
   position: fixed;
@@ -37,6 +49,7 @@ export const HeaderList = styled.ul`
     list-style: none;
     margin: 0px 15px;
     letter-spacing: 3px;
+    animation: ${fadeInNavigation} 800ms ease-in-out;
   }
 
   a {

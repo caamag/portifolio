@@ -1,5 +1,17 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Colors } from "../../global/colors";
+
+const fadeInIcon = keyframes`
+  0% {
+    opacity: 0;
+    margin-left: -50px;
+  }
+
+  100% {
+    opacity: 1;
+    margin-left: 0px;
+  }
+`;
 
 export const Contacts = styled.div<{ isHome: boolean }>`
   position: fixed;
@@ -15,6 +27,7 @@ export const Contacts = styled.div<{ isHome: boolean }>`
     color: ${Colors.gray};
     transform: scale(0.9);
     margin: 10px 0px;
+    animation: ${fadeInIcon} 800ms ease-in-out;
     transition: 150ms;
 
     &:hover {

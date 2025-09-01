@@ -1,5 +1,29 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Colors } from "../../global/colors";
+
+const fadeInText = keyframes`
+  0% {
+    opacity: 0;
+    margin-right: -80px;
+  }
+
+  100% {
+    opacity: 1;
+    margin-right: 0px;
+  }
+`;
+
+const fadeInProfile = keyframes`
+  0% {
+    opacity: 0;
+    margin-left: -80px;
+  }
+
+  100% {
+    opacity: 1;
+    margin-left: 0px;
+  }
+`;
 
 export const AboutContainer = styled.div`
   width: 100%;
@@ -35,6 +59,7 @@ export const Profile = styled.div`
     object-fit: cover;
     box-shadow: 1px 1px 20px ${Colors.darkGray};
     border-radius: 100%;
+    animation: ${fadeInProfile} 800ms ease-in-out;
 
     @media screen and (max-width: 800px) {
       width: 180px;
@@ -59,6 +84,7 @@ export const BtnContainer = styled.div`
 export const AboutText = styled.div`
   width: 70%;
   padding: 0px 20px;
+  animation: ${fadeInText} 800ms ease-in-out;
 
   p {
     color: ${Colors.white};
