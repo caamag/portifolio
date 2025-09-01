@@ -50,6 +50,10 @@ export const ImagesContainer = styled.div`
 export const MainBanner = styled.img`
   width: auto;
   height: 350px;
+
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 export const MobileImg = styled.img`
@@ -61,6 +65,10 @@ export const Description = styled.div`
   width: 70%;
   margin: 0 auto;
   margin-bottom: 20px;
+
+  @media screen and (max-width: 600px) {
+    width: 90%;
+  }
 
   p {
     font-size: 1.4rem;

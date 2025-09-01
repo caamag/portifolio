@@ -23,6 +23,10 @@ export const ProjectHeader = styled.div`
     height: 30px;
     margin-right: 20px;
   }
+
+  @media screen and (max-width: 600px) {
+    width: 90%;
+  }
 `;
 
 export const Description = styled.div`
@@ -49,6 +53,10 @@ export const Description = styled.div`
       color: ${Colors.white};
     }
   }
+
+  @media screen and (max-width: 600px) {
+    width: 90%;
+  }
 `;
 
 export const BannerContainer = styled.div`
@@ -60,4 +68,8 @@ export const Demontration = styled.img`
   width: 70%;
   margin: 0 auto;
   margin-bottom: 2px;
+
+  @media screen and (max-width: 600px) {
+    width: 90%;
+  }
 `;

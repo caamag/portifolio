@@ -54,7 +54,6 @@ export const Card = styled.div`
     font-size: 14px;
     font-weight: 200;
     letter-spacing: 1px;
-    text-indent: 10px;
   }
 `;
 

@@ -68,19 +68,21 @@ const ProjectsPage = () => {
             </_.IconsContainer>
           </_.Card>
         </NavLink>
-        <_.Card>
-          <LuShoppingBag />
-          <h4>E-commerce</h4>
-          <p>
-            Loja virtual desenvolvida do zero, com foco em catálogo de produtos,
-            carrinho e fluxo de compra.
-          </p>
-          <_.IconsContainer>
-            <RiReactjsFill />
-            <SiFirebase />
-            <SiTypescript />
-          </_.IconsContainer>
-        </_.Card>
+        <NavLink to={"https://github.com/caamag/Buki"}>
+          <_.Card>
+            <LuShoppingBag />
+            <h4>E-commerce</h4>
+            <p>
+              Loja virtual desenvolvida do zero, com foco em catálogo de
+              produtos, carrinho e fluxo de compra.
+            </p>
+            <_.IconsContainer>
+              <RiReactjsFill />
+              <SiFirebase />
+              <SiTypescript />
+            </_.IconsContainer>
+          </_.Card>
+        </NavLink>
       </_.Content>
     </_.ProjectsContainer>
   );

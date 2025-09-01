@@ -29,6 +29,11 @@ export const ProjectHeader = styled.div`
       margin-right: 20px;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    width: 90%;
+    padding: 130px 0px 0px 0px;
+  }
 `;
 
 export const ImagesContainer = styled.div`
@@ -39,6 +44,10 @@ export const ImagesContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 `;
 
 export const MainBanner = styled.img`
@@ -55,6 +64,10 @@ export const Description = styled.div`
   width: 70%;
   margin: 0 auto;
   margin-bottom: 20px;
+
+  @media screen and (max-width: 600px) {
+    width: 90%;
+  }
 
   p {
     font-size: 1.4rem;
