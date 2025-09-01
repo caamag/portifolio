@@ -17,13 +17,17 @@ const AboutPage = () => {
     window.open("https://mailto:caiolopesfv@gmail.com");
   };
 
+  const goToGithub = () => {
+    window.open("https://github.com/caamag");
+  };
+
   return (
     <_.AboutContainer>
       <_.AboutContent>
         <_.Profile>
           <img src={Profile} alt="profile" />
           <_.BtnContainer>
-            <Button>Currículo</Button>
+            <Button onClick={goToGithub}>Github</Button>
             <Button onClick={goToEmail}>E-mail</Button>
           </_.BtnContainer>
         </_.Profile>
