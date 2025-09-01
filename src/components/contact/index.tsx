@@ -2,10 +2,13 @@ import * as _ from "./style";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
+import { useLocation } from "react-router-dom";
 
 const Contacts = () => {
+  const location = useLocation();
+
   return (
-    <_.Contacts>
+    <_.Contacts isHome={location.pathname === "/"}>
       <a href="https://github.com/caamag">
         <FaGithub />
       </a>

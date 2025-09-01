@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Colors } from "../../global/colors";
 
-export const Contacts = styled.div`
+export const Contacts = styled.div<{ isHome: boolean }>`
   position: fixed;
   z-index: 5;
   width: 40px;
@@ -24,6 +24,7 @@ export const Contacts = styled.div`
   }
 
   @media screen and (max-width: 600px) {
+    display: ${(p) => (p.isHome ? "" : "none")};
     left: 10px;
   }
 `;
