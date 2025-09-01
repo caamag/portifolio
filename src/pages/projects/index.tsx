@@ -68,7 +68,7 @@ const ProjectsPage = () => {
             </_.IconsContainer>
           </_.Card>
         </NavLink>
-        <NavLink to={"https://github.com/caamag/Buki"}>
+        <a href="https://github.com/caamag/Buki" target="blank">
           <_.Card>
             <LuShoppingBag />
             <h4>E-commerce</h4>
@@ -82,7 +82,7 @@ const ProjectsPage = () => {
               <SiTypescript />
             </_.IconsContainer>
           </_.Card>
-        </NavLink>
+        </a>
       </_.Content>
     </_.ProjectsContainer>
   );
