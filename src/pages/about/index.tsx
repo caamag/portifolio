@@ -51,6 +51,7 @@ const AboutPage = () => {
             oferecer uma experiência mais eficiente e conectada para os usuários
             finais.
           </p>
+          <br />
 
           <_.Skills>
             <FaHtml5 />

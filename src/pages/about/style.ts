@@ -37,7 +37,8 @@ export const AboutContent = styled.div`
   margin: 0 auto;
   padding-top: 130px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
   gap: 10px;
 
   @media screen and (max-width: 1000px) {
@@ -52,6 +53,7 @@ export const Profile = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 40px;
 
   img {
     width: 300px;
@@ -69,7 +71,6 @@ export const Profile = styled.div`
 
   @media screen and (max-width: 1000px) {
     width: 100%;
-    margin-bottom: 40px;
   }
 `;
 
@@ -91,12 +92,13 @@ export const AboutText = styled.div`
     letter-spacing: 1px;
     font-size: 16px;
     font-weight: 200;
+    text-align: justify;
     text-indent: 15px;
     margin-bottom: 10px;
 
     @media screen and (max-width: 800px) {
-      font-size: 14px;
-      text-align: justify;
+      font-size: 18px;
+      text-align: center;
     }
   }
 
@@ -110,6 +112,7 @@ export const AboutText = styled.div`
 export const Skills = styled.div`
   display: flex;
   gap: 10px;
+  justify-content: center;
   margin-top: 20px;
   color: ${Colors.brown};
 
@@ -119,8 +122,7 @@ export const Skills = styled.div`
     margin-right: 10px;
 
     @media screen and (max-width: 600px) {
-      height: 50px;
-      width: auto;
+      display: none;
     }
   }
 `;

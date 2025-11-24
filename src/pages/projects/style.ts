@@ -27,7 +27,7 @@ export const ProjectsContainer = styled.div`
 export const Content = styled.div`
   width: 80%;
   margin: 0 auto;
-  margin-top: 130px;
+  margin-top: 150px;
 
   display: flex;
   justify-content: center;
