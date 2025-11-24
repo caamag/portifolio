@@ -33,6 +33,15 @@ export const Content = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   gap: 15px;
+
+  a.card-link,
+  a.card-link:visited,
+  a.card-link:active,
+  a.card-link:hover {
+    text-decoration: none;
+    color: inherit;
+    outline: none !important;
+  }
 `;
 
 export const Card = styled.div`

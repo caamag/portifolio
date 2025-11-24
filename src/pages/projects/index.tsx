@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import Lacoste from "../../assets/lacoste-logo.png";
 import Roca from "../../assets/roca-logo.png";
 import Conciex from "../../assets/Conciex-Logo.png";
+import Philco from "../../assets/philco.png";
 
 //icons
 import { FaHtml5 } from "react-icons/fa";
@@ -12,14 +13,20 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { SiZendesk } from "react-icons/si";
 import { RiReactjsFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
-import { SiFirebase } from "react-icons/si";
 import { LuShoppingBag } from "react-icons/lu";
+import { SiNestjs } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
+import { BiLogoPostgresql } from "react-icons/bi";
 
 const ProjectsPage = () => {
   return (
     <_.ProjectsContainer>
       <_.Content>
-        <NavLink to={"/projects/lacoste"}>
+        <a
+          href="https://lacostebrazil.zendesk.com/hc/pt-br"
+          target="blank"
+          className="card-link"
+        >
           <_.Card>
             <_.ProjectLogo src={Lacoste} alt="" />
             <h4>Central de ajuda Lacoste</h4>
@@ -34,8 +41,8 @@ const ProjectsPage = () => {
               <SiZendesk />
             </_.IconsContainer>
           </_.Card>
-        </NavLink>
-        <NavLink to={"/projects/roca"}>
+        </a>
+        <NavLink to={"/projects/roca"} className="card-link">
           <_.Card>
             <_.ProjectLogo src={Roca} alt="" />
             <h4>Portal de gestão de chamados</h4>
@@ -51,7 +58,7 @@ const ProjectsPage = () => {
             </_.IconsContainer>
           </_.Card>
         </NavLink>
-        <NavLink to={"/projects/conciex"}>
+        <NavLink to={"/projects/conciex"} className="card-link">
           <_.Card>
             <_.ConciexLogo src={Conciex} alt="" />
             <h4>Pesquisas de CSAT/NPS</h4>
@@ -68,24 +75,35 @@ const ProjectsPage = () => {
             </_.IconsContainer>
           </_.Card>
         </NavLink>
-        <NavLink to={"/projects/conciex"}>
+        <a
+          href="https://atendimento-philco.zendesk.com/hc/pt-br"
+          target="blank"
+          className="card-link"
+        >
           <_.Card>
-            <_.ConciexLogo src={Conciex} alt="" />
-            <h4>Pesquisas de CSAT/NPS</h4>
+            <_.ProjectLogo
+              src={Philco}
+              alt=""
+              style={{ filter: "invert(100%)" }}
+            />
+            <h4>Portal consumidor</h4>
             <p>
-              Plataforma integrada com Zendesk para criar, editar, visualizar e
-              excluir templates de pesquisa de satisfação + criação de
-              relatórios.
+              Plataforma integrada à Zendesk para tirar dúvidas, consultar
+              pedidos e localizar assistência técnica.
             </p>
             <_.IconsContainer>
-              <RiReactjsFill />
+              <FaHtml5 />
               <FaCss3Alt />
-              <SiTypescript />
+              <IoLogoJavascript />
               <SiZendesk />
             </_.IconsContainer>
           </_.Card>
-        </NavLink>
-        <a href="https://github.com/caamag/Buki" target="blank">
+        </a>
+        <a
+          href="https://github.com/caamag/Buki"
+          target="blank"
+          className="card-link"
+        >
           <_.Card>
             <LuShoppingBag />
             <h4>E-commerce</h4>
@@ -95,8 +113,10 @@ const ProjectsPage = () => {
             </p>
             <_.IconsContainer>
               <RiReactjsFill />
-              <SiFirebase />
               <SiTypescript />
+              <SiNestjs />
+              <FaNodeJs />
+              <BiLogoPostgresql />
             </_.IconsContainer>
           </_.Card>
         </a>
