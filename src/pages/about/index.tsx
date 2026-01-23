@@ -13,8 +13,8 @@ import { FaNodeJs } from "react-icons/fa";
 import { FaGitSquare } from "react-icons/fa";
 
 const AboutPage = () => {
-  const goToEmail = () => {
-    window.open("https://mailto:caiolopesfv@gmail.com");
+  const goToWpp = () => {
+    window.open("https://wa.me/5511966197683");
   };
 
   const goToGithub = () => {
@@ -28,7 +28,7 @@ const AboutPage = () => {
           <img src={Profile} alt="profile" />
           <_.BtnContainer>
             <Button onClick={goToGithub}>Github</Button>
-            <Button onClick={goToEmail}>E-mail</Button>
+            <Button onClick={goToWpp}>Contato</Button>
           </_.BtnContainer>
         </_.Profile>
         <_.AboutText>

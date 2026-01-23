@@ -26,6 +26,10 @@ export const ProjectHeader = styled.div`
 
   @media screen and (max-width: 600px) {
     width: 90%;
+
+    img {
+      height: 15px;
+    }
   }
 `;
 

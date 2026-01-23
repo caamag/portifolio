@@ -1,10 +1,11 @@
 import * as _ from "./style";
 import { NavLink } from "react-router-dom";
 
-import Lacoste from "../../assets/lacoste-logo.png";
-import Roca from "../../assets/roca-logo.png";
 import Conciex from "../../assets/Conciex-Logo.png";
 import Philco from "../../assets/philco.png";
+import Havaianas from "../../assets/havaianas.png";
+import Buki from "../../assets/Buki-logo.png";
+import Kanban from "../../assets/Kanban-logo.png";
 
 //icons
 import { FaHtml5 } from "react-icons/fa";
@@ -13,23 +14,61 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { SiZendesk } from "react-icons/si";
 import { RiReactjsFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
-import { LuShoppingBag } from "react-icons/lu";
 import { SiNestjs } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FaPython } from "react-icons/fa";
 
 const ProjectsPage = () => {
   return (
     <_.ProjectsContainer>
       <_.Content>
+        <NavLink to={"/projects/conciex"} className="card-link">
+          <_.Card>
+            <_.ConciexLogo src={Conciex} alt="" />
+            <h4>Pesquisas de CSAT/NPS</h4>
+            <p>
+              Plataforma integrada com Zendesk para criar, editar, visualizar e
+              excluir templates de pesquisa de satisfação + criação de
+              relatórios.
+            </p>
+            <_.IconsContainer>
+              <RiReactjsFill />
+              <SiTypescript />
+              <FaPython />
+              <SiZendesk />
+            </_.IconsContainer>
+          </_.Card>
+        </NavLink>
         <a
-          href="https://lacostebrazil.zendesk.com/hc/pt-br"
+          href="https://conciex.com/produtos/conciex-kanban"
           target="blank"
           className="card-link"
         >
           <_.Card>
-            <_.ProjectLogo src={Lacoste} alt="" />
-            <h4>Central de ajuda Lacoste</h4>
+            <_.ConciexLogo src={Kanban} alt="" />
+            <h4>Gestão de tarefas</h4>
+            <p>
+              Plataforma integrada com Zendesk para supervisor de operações
+              gerirem as tarefas do time de suporte / atendimento.
+            </p>
+            <_.IconsContainer>
+              <RiReactjsFill />
+              <SiTypescript />
+              <SiZendesk />
+              <RiTailwindCssFill />
+            </_.IconsContainer>
+          </_.Card>
+        </a>
+        <a
+          href="https://havaianas-help.zendesk.com/hc/pt-br"
+          target="blank"
+          className="card-link"
+        >
+          <_.Card>
+            <_.ProjectLogo src={Havaianas} alt="" />
+            <h4>Central de ajuda Havaianas</h4>
             <p>
               Criação de Help Center com Zendesk Guide, focado em
               autoatendimento e abertura de chamados.
@@ -42,39 +81,27 @@ const ProjectsPage = () => {
             </_.IconsContainer>
           </_.Card>
         </a>
-        <NavLink to={"/projects/roca"} className="card-link">
+        <a
+          href="https://github.com/caamag/Buki"
+          target="blank"
+          className="card-link"
+        >
           <_.Card>
-            <_.ProjectLogo src={Roca} alt="" />
-            <h4>Portal de gestão de chamados</h4>
+            <_.ProjectLogo src={Buki} alt="" />
+            <h4>E-commerce</h4>
             <p>
-              Desenvolvimento de portal interno para gestão de chamados, com
-              foco em usabilidade e eficiência no atendimento.
+              Loja virtual desenvolvida do zero, com foco em catálogo de
+              produtos, carrinho e fluxo de compra.
             </p>
             <_.IconsContainer>
               <RiReactjsFill />
-              <FaCss3Alt />
               <SiTypescript />
-              <SiZendesk />
+              <SiNestjs />
+              <FaNodeJs />
+              <BiLogoPostgresql />
             </_.IconsContainer>
           </_.Card>
-        </NavLink>
-        <NavLink to={"/projects/conciex"} className="card-link">
-          <_.Card>
-            <_.ConciexLogo src={Conciex} alt="" />
-            <h4>Pesquisas de CSAT/NPS</h4>
-            <p>
-              Plataforma integrada com Zendesk para criar, editar, visualizar e
-              excluir templates de pesquisa de satisfação + criação de
-              relatórios.
-            </p>
-            <_.IconsContainer>
-              <RiReactjsFill />
-              <FaCss3Alt />
-              <SiTypescript />
-              <SiZendesk />
-            </_.IconsContainer>
-          </_.Card>
-        </NavLink>
+        </a>
         <a
           href="https://atendimento-philco.zendesk.com/hc/pt-br"
           target="blank"
@@ -96,27 +123,6 @@ const ProjectsPage = () => {
               <FaCss3Alt />
               <IoLogoJavascript />
               <SiZendesk />
-            </_.IconsContainer>
-          </_.Card>
-        </a>
-        <a
-          href="https://github.com/caamag/Buki"
-          target="blank"
-          className="card-link"
-        >
-          <_.Card>
-            <LuShoppingBag />
-            <h4>E-commerce</h4>
-            <p>
-              Loja virtual desenvolvida do zero, com foco em catálogo de
-              produtos, carrinho e fluxo de compra.
-            </p>
-            <_.IconsContainer>
-              <RiReactjsFill />
-              <SiTypescript />
-              <SiNestjs />
-              <FaNodeJs />
-              <BiLogoPostgresql />
             </_.IconsContainer>
           </_.Card>
         </a>

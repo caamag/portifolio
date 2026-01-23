@@ -91,7 +91,7 @@ export const IconsContainer = styled.div`
 `;
 
 export const ConciexLogo = styled.img`
-  width: 120px !important;
-  height: auto !important;
+  width: auto !important;
+  height: 20px !important;
   margin-top: 10px;
 `;
