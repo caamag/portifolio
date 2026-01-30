@@ -10,7 +10,6 @@ import Loader from "./components/Loader";
 import HomePage from "./pages/home";
 import ProjectsPage from "./pages/projects";
 import AboutPage from "./pages/about";
-import ConciexPage from "./pages/conciex";
 
 const Router = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -35,7 +34,6 @@ const Router = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/projects/conciex" element={<ConciexPage />} />
       </Routes>
     </BrowserRouter>
   );

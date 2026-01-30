@@ -1,11 +1,9 @@
 import * as _ from "./style";
-import { NavLink } from "react-router-dom";
-
-import Conciex from "../../assets/Conciex-Logo.png";
 import Philco from "../../assets/philco.png";
 import Havaianas from "../../assets/havaianas.png";
 import Buki from "../../assets/Buki-logo.png";
 import Kanban from "../../assets/Kanban-logo.png";
+import Message from "../../assets/conciex-messaging.png";
 
 //icons
 import { FaHtml5 } from "react-icons/fa";
@@ -18,29 +16,30 @@ import { SiNestjs } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { FaPython } from "react-icons/fa";
 
 const ProjectsPage = () => {
   return (
     <_.ProjectsContainer>
       <_.Content>
-        <NavLink to={"/projects/conciex"} className="card-link">
+        <a
+          href="https://conciex.com/produtos/conciex-messaging"
+          className="card-link"
+        >
           <_.Card>
-            <_.ConciexLogo src={Conciex} alt="" />
-            <h4>Pesquisas de CSAT/NPS</h4>
+            <_.ConciexLogo src={Message} alt="" />
+            <h4>Plataforma de mensageria</h4>
             <p>
-              Plataforma integrada com Zendesk para criar, editar, visualizar e
-              excluir templates de pesquisa de satisfação + criação de
-              relatórios.
+              Envio em massa, automações e mensagens individuais via WhatsApp,
+              SMS e e-mail, com histórico, controle e métricas dentro do
+              Zendesk.
             </p>
             <_.IconsContainer>
               <RiReactjsFill />
               <SiTypescript />
-              <FaPython />
               <SiZendesk />
             </_.IconsContainer>
           </_.Card>
-        </NavLink>
+        </a>
         <a
           href="https://conciex.com/produtos/conciex-kanban"
           target="blank"
