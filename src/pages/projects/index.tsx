@@ -30,8 +30,7 @@ const ProjectsPage = () => {
             <h4>Plataforma de mensageria</h4>
             <p>
               Envio em massa, automações e mensagens individuais via WhatsApp,
-              SMS e e-mail, com histórico, controle e métricas dentro do
-              Zendesk.
+              SMS e e-mail, com histórico e controle.
             </p>
             <_.IconsContainer>
               <RiReactjsFill />
@@ -61,7 +60,7 @@ const ProjectsPage = () => {
           </_.Card>
         </a>
         <a
-          href="https://havaianas-help.zendesk.com/hc/pt-br"
+          href="https://alpargatasdtcbrasil.zendesk.com/hc/pt-br"
           target="blank"
           className="card-link"
         >
