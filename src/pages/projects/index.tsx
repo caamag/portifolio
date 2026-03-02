@@ -4,6 +4,7 @@ import Havaianas from "../../assets/havaianas.png";
 import Buki from "../../assets/Buki-logo.png";
 import Kanban from "../../assets/Kanban-logo.png";
 import Message from "../../assets/conciex-messaging.png";
+import Lumio from "../../assets/logo-lumio.png";
 
 //icons
 import { FaHtml5 } from "react-icons/fa";
@@ -56,6 +57,29 @@ const ProjectsPage = () => {
               <SiTypescript />
               <SiZendesk />
               <RiTailwindCssFill />
+            </_.IconsContainer>
+          </_.Card>
+        </a>
+        <a
+          href="https://lumio-ui-website.vercel.app/"
+          target="blank"
+          className="card-link"
+        >
+          <_.Card>
+            <_.ProjectLogo
+              src={Lumio}
+              alt=""
+              style={{ height: "40px", filter: "invert(100%)" }}
+            />
+            <h4>Design System</h4>
+            <p>
+              Criação de um design system do zero, com tokens de design,
+              componentes e documentação utilizando Storybook.
+            </p>
+            <_.IconsContainer>
+              <RiReactjsFill />
+              <SiTypescript />
+              <FaCss3Alt />
             </_.IconsContainer>
           </_.Card>
         </a>
