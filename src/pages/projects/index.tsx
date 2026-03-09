@@ -17,6 +17,7 @@ import { SiNestjs } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { SiStorybook } from "react-icons/si";
 
 const ProjectsPage = () => {
   return (
@@ -80,6 +81,7 @@ const ProjectsPage = () => {
               <RiReactjsFill />
               <SiTypescript />
               <FaCss3Alt />
+              <SiStorybook />
             </_.IconsContainer>
           </_.Card>
         </a>
