@@ -1,19 +1,30 @@
-import * as _ from "./style";
+import { useEffect } from "react";
+import Hero from "../../sections/Hero";
+import Brands from "../../sections/Brands";
+import About from "../../sections/About";
+import Services from "../../sections/Services";
+import Projects from "../../sections/Projects";
+import Process from "../../sections/Process";
+import Contact from "../../sections/Contact";
 
-const HomePage = () => {
+type Props = { scrollTo?: string };
+
+const HomePage = ({ scrollTo }: Props) => {
+  useEffect(() => {
+    if (!scrollTo) return;
+    document.getElementById(scrollTo)?.scrollIntoView();
+  }, [scrollTo]);
+
   return (
-    <_.HomeContainer>
-      <_.Content>
-        <_.Title>
-          <h3>OLÁ ME CHAMO</h3>
-          <_.Line />
-        </_.Title>
-        <_.Name>CAIO</_.Name>
-        <_.Description>
-          UM DESENVOLVEDOR <br /> FRONTEND
-        </_.Description>
-      </_.Content>
-    </_.HomeContainer>
+    <main>
+      <Hero />
+      <Brands />
+      <About />
+      <Services />
+      <Projects />
+      <Process />
+      <Contact />
+    </main>
   );
 };
 

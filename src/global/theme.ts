@@ -1,0 +1,17 @@
+export const theme = {
+  bg: "#060912",
+  bgSoft: "#0a0f1c",
+  surface: "rgba(15, 23, 42, 0.55)",
+  surfaceSolid: "#0d1424",
+  border: "rgba(148, 163, 184, 0.12)",
+  borderStrong: "rgba(148, 163, 184, 0.22)",
+  text: "#e6edf7",
+  muted: "#94a3b8",
+  subtle: "#64748b",
+  accent: "#22d3ee",
+  accent2: "#818cf8",
+  success: "#34d399",
+  gradient: "linear-gradient(135deg, #22d3ee 0%, #818cf8 100%)",
+  radius: "18px",
+  maxWidth: "1200px",
+};

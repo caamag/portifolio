@@ -1,40 +1,22 @@
-import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// Components
-import Header from "./components/header";
-import Contacts from "./components/contact";
-import Loader from "./components/Loader";
-
-// Pages
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import HomePage from "./pages/home";
-import ProjectsPage from "./pages/projects";
-import AboutPage from "./pages/about";
 
+// The site is now a single landing page. The old /about and /projects URLs
+// still work: they render the same page and scroll to the matching section.
 const Router = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 5000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (isLoading) {
-    return <Loader />;
-  }
-
   return (
     <BrowserRouter>
       <Header />
-      <Contacts />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/about" element={<AboutPage />} />
+        <Route path="/about" element={<HomePage scrollTo="sobre" />} />
+        <Route path="/projects" element={<HomePage scrollTo="projetos" />} />
+        <Route path="*" element={<HomePage />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };
