@@ -75,6 +75,34 @@ const Cover = styled.div<{ $glow: string }>`
   }
 `;
 
+const Wordmark = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+
+  strong {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    background: linear-gradient(135deg, #ffffff 0%, #c7d2fe 55%, #818cf8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  span {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: ${theme.subtle};
+  }
+`;
+
 const Tag = styled.span`
   position: absolute;
   top: 14px;
@@ -172,7 +200,7 @@ const Projects = () => (
             Trabalhos que estão <GradientText>no ar</GradientText>
           </>
         }
-        subtitle="Plataformas SaaS, portais de atendimento, e-commerce e design system — projetos reais, usados por empresas e seus clientes todos os dias."
+        subtitle="Plataformas SaaS, portais de atendimento, e-commerce, design system e páginas de vendas — projetos reais, usados por empresas e seus clientes todos os dias."
       />
       <Grid>
         {PROJECTS.map((p, i) => (
@@ -181,14 +209,21 @@ const Projects = () => (
               <Cover className="cover" $glow={p.glow}>
                 <Tag>{p.category}</Tag>
                 <Index>{String(i + 1).padStart(2, "0")}</Index>
-                <img
-                  src={p.logo}
-                  alt={p.title}
-                  style={{
-                    height: p.logoHeight ?? 32,
-                    filter: p.invertLogo ? "invert(1)" : undefined,
-                  }}
-                />
+                {p.logo ? (
+                  <img
+                    src={p.logo}
+                    alt={p.title}
+                    style={{
+                      height: p.logoHeight ?? 32,
+                      filter: p.invertLogo ? "invert(1)" : undefined,
+                    }}
+                  />
+                ) : p.wordmark ? (
+                  <Wordmark>
+                    <strong>{p.wordmark.title}</strong>
+                    {p.wordmark.caption && <span>{p.wordmark.caption}</span>}
+                  </Wordmark>
+                ) : null}
               </Cover>
               <Body>
                 <h3>{p.title}</h3>

@@ -139,7 +139,8 @@ export type Project = {
   category: string;
   description: string;
   href: string;
-  logo: string;
+  logo?: string;
+  wordmark?: { title: string; caption?: string };
   logoHeight?: number;
   invertLogo?: boolean;
   glow: string;
@@ -180,6 +181,16 @@ export const PROJECTS: Project[] = [
     invertLogo: true,
     glow: "rgba(34, 211, 238, 0.28)",
     tech: [TECH.react, TECH.ts, TECH.css, TECH.storybook],
+  },
+  {
+    title: "Página de vendas",
+    category: "Landing Page",
+    description:
+      "Página de vendas para pequenos negócios, com antes e depois interativo, calculadora de retorno e contadores animados. Toda a conversão leva ao WhatsApp.",
+    href: "https://caio-magalhaes.vercel.app/",
+    wordmark: { title: "Página de vendas", caption: "sites que vendem" },
+    glow: "rgba(79, 70, 229, 0.38)",
+    tech: [TECH.html, TECH.css, TECH.js],
   },
 ];
 
