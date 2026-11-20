@@ -1,13 +1,9 @@
 import type { IconType } from "react-icons";
 
 // Images
-import Philco from "../assets/philco.png";
-import Havaianas from "../assets/havaianas.png";
-import Buki from "../assets/Buki-logo.png";
 import Kanban from "../assets/Kanban-logo.png";
 import Message from "../assets/conciex-messaging.png";
 import Lumio from "../assets/logo-lumio.png";
-import ConciexLogo from "../assets/Conciex-Logo.png";
 
 // Tech icons
 import { FaHtml5, FaCss3Alt, FaNodeJs, FaGitAlt } from "react-icons/fa";
@@ -185,53 +181,6 @@ export const PROJECTS: Project[] = [
     glow: "rgba(34, 211, 238, 0.28)",
     tech: [TECH.react, TECH.ts, TECH.css, TECH.storybook],
   },
-  {
-    title: "Central de ajuda Havaianas",
-    category: "Help Center",
-    description:
-      "Help Center em Zendesk Guide focado em autoatendimento e abertura de chamados para uma marca global.",
-    href: "https://alpargatasdtcbrasil.zendesk.com/hc/pt-br",
-    logo: Havaianas,
-    logoHeight: 40,
-    glow: "rgba(237, 48, 35, 0.3)",
-    tech: [TECH.html, TECH.css, TECH.js, TECH.zendesk],
-  },
-  {
-    title: "Buki — E-commerce",
-    category: "E-commerce",
-    description:
-      "Loja virtual desenvolvida do zero, com catálogo de produtos, carrinho e fluxo de compra completo.",
-    href: "https://github.com/caamag/Buki",
-    logo: Buki,
-    logoHeight: 52,
-    glow: "rgba(216, 37, 36, 0.3)",
-    tech: [TECH.react, TECH.ts, TECH.nest, TECH.node, TECH.postgres],
-  },
-  {
-    title: "Portal do consumidor Philco",
-    category: "Portal de atendimento",
-    description:
-      "Plataforma integrada à Zendesk para tirar dúvidas, consultar pedidos e localizar assistência técnica.",
-    href: "https://atendimento-philco.zendesk.com/hc/pt-br",
-    logo: Philco,
-    logoHeight: 40,
-    invertLogo: true,
-    glow: "rgba(148, 163, 184, 0.25)",
-    tech: [TECH.html, TECH.css, TECH.js, TECH.zendesk],
-  },
-];
-
-export const BRANDS: {
-  name: string;
-  logo: string;
-  invert?: boolean;
-  height: number;
-  /** Show only the left part of the image (px), e.g. the "conciex" wordmark without "· survey". */
-  cropWidth?: number;
-}[] = [
-  { name: "Havaianas", logo: Havaianas, height: 30 },
-  { name: "Philco", logo: Philco, invert: true, height: 30 },
-  { name: "Conciex", logo: ConciexLogo, height: 22, cropWidth: 126 },
 ];
 
 export const PROCESS: { icon: IconType; title: string; description: string }[] = [

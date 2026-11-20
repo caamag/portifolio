@@ -177,7 +177,7 @@ const About = () => (
             <p>
               Hoje atuo na <strong>BCR.CX</strong>, onde sou responsável pelo front-end de diversos
               produtos, com foco em aplicações que rodam dentro da Zendesk e integrações com APIs
-              e fluxos de atendimento — soluções usadas por marcas como Havaianas e Philco.
+              e fluxos de atendimento.
             </p>
 
             <InfoGrid>

@@ -7,6 +7,10 @@ const Wrapper = styled.div<{ $visible: boolean; $delay: number }>`
   transition: opacity 700ms ease, transform 700ms cubic-bezier(0.2, 0.7, 0.2, 1);
   transition-delay: ${(p) => p.$delay}ms;
   height: 100%;
+
+  @media (prefers-reduced-motion: reduce) {
+    transform: none;
+  }
 `;
 
 type Props = { children: ReactNode; delay?: number; className?: string };

@@ -43,8 +43,7 @@ export const GobalStyle = createGlobalStyle`
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     *, *::before, *::after {
-      animation-duration: 0.01ms !important;
-      transition-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
     }
   }
 `;

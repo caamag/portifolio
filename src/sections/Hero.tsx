@@ -11,11 +11,6 @@ const fadeUp = keyframes`
   to   { opacity: 1; transform: translateY(0); }
 `;
 
-const float = keyframes`
-  0%, 100% { transform: translateY(0); }
-  50%      { transform: translateY(-10px); }
-`;
-
 const pulse = keyframes`
   0%   { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.6); }
   100% { box-shadow: 0 0 0 8px rgba(52, 211, 153, 0); }
@@ -235,7 +230,6 @@ const FloatCard = styled.div`
   background: rgba(10, 15, 28, 0.82);
   border-color: ${theme.borderStrong};
   box-shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.8);
-  animation: ${float} 6s ease-in-out infinite;
 `;
 
 const CodeCard = styled(FloatCard)`
@@ -272,7 +266,6 @@ const StatCard = styled(FloatCard)`
   align-items: center;
   gap: 12px;
   padding: 12px 16px;
-  animation-delay: -3s;
 
   .icon {
     width: 38px;
@@ -300,7 +293,6 @@ const StatTop = styled(StatCard)`
 const StatMid = styled(StatCard)`
   top: 40%;
   right: -16%;
-  animation-delay: -1.5s;
 
   .icon {
     background: rgba(129, 140, 248, 0.14);

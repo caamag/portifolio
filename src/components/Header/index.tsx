@@ -51,9 +51,6 @@ const Header = () => {
       <_.Inner>
         <_.Brand href="#inicio" onClick={close} aria-label="Caio Lopes — início">
           <img src={Logo} alt="" />
-          <span>
-            Caio <strong>Lopes</strong>
-          </span>
         </_.Brand>
 
         <_.Nav aria-label="Navegação principal">

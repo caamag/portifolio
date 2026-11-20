@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import Hero from "../../sections/Hero";
-import Brands from "../../sections/Brands";
 import About from "../../sections/About";
 import Services from "../../sections/Services";
 import Projects from "../../sections/Projects";
@@ -18,7 +17,6 @@ const HomePage = ({ scrollTo }: Props) => {
   return (
     <main>
       <Hero />
-      <Brands />
       <About />
       <Services />
       <Projects />
