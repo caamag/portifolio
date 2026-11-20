@@ -365,7 +365,7 @@ const Hero = () => (
           <StatTop>
             <div className="icon"><FiZap /></div>
             <div>
-              <strong>3+ anos</strong>
+              <strong>4+ anos</strong>
               <small>de experiência</small>
             </div>
           </StatTop>
