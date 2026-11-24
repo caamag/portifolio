@@ -187,6 +187,10 @@ const Visual = styled.div`
   @media (max-width: 980px) {
     width: min(380px, 86%);
   }
+
+  @media (max-width: 600px) {
+    margin-bottom: 48px;
+  }
 `;
 
 const Glow = styled.div`
@@ -257,6 +261,7 @@ const CodeCard = styled(FloatCard)`
 
   @media (max-width: 600px) {
     left: -6%;
+    bottom: -12%;
     font-size: 11px;
   }
 `;
@@ -279,6 +284,10 @@ const StatCard = styled(FloatCard)`
   }
   strong { display: block; font-size: 18px; line-height: 1.1; }
   small { font-size: 12px; color: ${theme.muted}; }
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
 
 const StatTop = styled(StatCard)`
